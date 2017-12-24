@@ -1,0 +1,12 @@
+server:
+  port: 8484
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8171/eureka/
+    instance:
+      hostname: localhost
+turbine:
+  appConfig: races,zuul-service
+  aggregator:
+    cluster-config: RACES,ZUUL-SERVICE
